@@ -1,0 +1,14 @@
+{
+  "name": "praktyki_daftup_projekt",
+  "version": "1.0.0",
+  "description": "Project made for recruitment purposes.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Chruściński",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.3.2"
+  }
+}

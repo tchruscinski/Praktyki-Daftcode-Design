@@ -1,0 +1,9 @@
+@import "variables";
+@import "mixins";
+
+html,body{
+  margin: 0;
+  padding: 0;
+  background: url('../../assets/bg_image.jpg') no-repeat center center fixed;
+  @include prefix('background-size', 'cover');
+}
