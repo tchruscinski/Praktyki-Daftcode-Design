@@ -85,7 +85,7 @@ body main .animation {
   width: 90px;
   height: 90px;
 }
-body main .animation object {
+body main .animation svg {
   width: 80px;
   height: 80px;
 }
