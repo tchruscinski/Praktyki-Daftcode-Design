@@ -5,6 +5,7 @@ html, body {
 
 body {
   display: flex;
+  flex-wrap: wrap;
   background: url("../../assets/bg_image.jpg") no-repeat center center fixed;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -20,10 +21,12 @@ body a {
 body nav {
   display: flex;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 11px;
+  order: 1;
+  width: 100%;
 }
 body nav #logo {
-  margin: 5vh 53vw 0 4vw;
+  margin: 5vh 52vw 0 4vw;
   order: 1;
 }
 body nav #logo img {
@@ -40,8 +43,7 @@ body nav .option {
   height: 10px;
 }
 body nav .option hr {
-  visibility: hidden;
-  display: block;
+  display: none;
   height: 0;
   border: 0;
   width: 50%;
@@ -50,19 +52,63 @@ body nav .option hr {
   padding: 0;
 }
 body nav .option:hover hr {
-  visibility: visible;
+  display: block;
 }
 body nav .visited {
   border-bottom: 2px solid #fff;
 }
 body nav .contact {
-  border-radius: 5px;
+  border-radius: 3px;
   border: solid 2px #fff;
-  padding: 6px 20px;
+  padding: 7px 20px;
 }
 body nav .contact:hover {
   background-color: #fff;
   color: #001820;
+}
+body main {
+  order: 2;
+  width: 100%;
+}
+body main p {
+  font-size: 26px;
+  width: 40%;
+  margin: 15vh auto 0;
+  text-align: center;
+}
+body main p span {
+  color: #fff;
+  font-weight: 600;
+}
+body main .animation {
+  margin: 12vh auto 0;
+  width: 90px;
+  height: 90px;
+}
+body main .animation object {
+  width: 80px;
+  height: 80px;
+}
+body main .animation .active {
+  -webkit-animation: spin 2s linear;
+  -moz-animation: spin 2s linear;
+  animation: spin 2s linear;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=src/css/main.css.map */
