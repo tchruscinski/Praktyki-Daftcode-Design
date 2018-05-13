@@ -2,9 +2,9 @@ let options = document.querySelectorAll('.option'),
     object  = document.querySelector('svg');
 
 object.addEventListener('click', function(){
-    object.classList.add("active");
+    object.classList.add("clicked");
     setTimeout(function(){
-    object.classList.remove("active");
+    object.classList.remove("clicked");
     }, 2000);
 });
 
