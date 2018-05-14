@@ -175,29 +175,35 @@ body{
         width: 100%;
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 10px;
 
-        .triangle {
-          width: 0px;
-          height: 0px;
-          margin: 0 auto;
-          border-style: inset;
-          border-width: 0 58px 50px 58px;
-          border-color: transparent transparent white transparent;
-          position: fixed;
+        #wrapper {
+          position: absolute;
+          width: 140px;
+          height: 60px;
           bottom: 0;
           right: 50%; // Move it to the right for 50% of parent element
-          margin-right: -50px; // You need here to put 1/2 of what you have below in width
-          //width:500px;
+          margin-right: -70px;
+          overflow: hidden;
+        }
+
+        .triangle {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          background-color: $font-color;
+          width:100px;
+          height:96px;
+          top: 20px;
+          position:relative;
+          -moz-border-radius: 20px;
+          border-radius: 6px;
+          margin: 0 auto;
         }
 
         .triangle p {
-          text-align: center;
-          top: 22px;
-          left: -47px;
-          position: relative;
-          width: 93px;
-          margin: 0;
+          -webkit-transform: rotate(-45deg);
+          width: 40px;
+          padding: 15px 0 0 3px;
         }
       }
 
