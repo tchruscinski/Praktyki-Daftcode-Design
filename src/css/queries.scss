@@ -3,7 +3,7 @@
 
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1220px){
   #logo{
     margin-right: 45vw !important;
   }
@@ -16,22 +16,92 @@
 
     nav{
       font-size: 10px !important;
+
+      .option{
+        padding: 7px 5px 7px 0 !important;
+      }
+
+      hr{
+        margin-top: 7px !important;
+      }
+
+      .contact{
+        padding: 6px 20px !important;
+      }
     }
 
     #logo{
-      margin-right: 40vw !important;
+      margin-right: 42vw !important;
     }
 
     main{
       .motto{
         margin-top: 12vh !important;
-        font-size: 24px !important;
+        font-size: 26px !important;
+        width: 50% !important;
       }
 
       .animation{
           margin-top: 13vh !important;
           width: 80px !important;
           height: 80px !important;
+
+          svg{
+            width: 76px !important;
+            height: 76px !important;
+          }
+      }
+
+      .socials-container{
+
+        span{
+          font-size: 10px !important;
+        }
+
+        .socials{
+          object{
+            width: 15px !important;
+            height: 15px !important;
+          }
+
+          #google,
+          #twitter{
+            width: 19px !important;
+            height: 19px !important;
+          }
+        }
+      }
+
+    }
+
+    footer{
+      font-size: 9px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 920px){
+  body{
+    #logo{
+      margin-right: 40vw !important;
+    }
+    nav{
+      .contact{
+          padding: 6px 16px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 870px){
+  body{
+    #logo{
+      margin-right: 36vw !important;
+    }
+
+    main{
+      .motto{
+        font-size: 22px !important;
       }
     }
   }

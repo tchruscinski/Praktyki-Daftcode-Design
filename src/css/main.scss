@@ -80,7 +80,7 @@ body{
         order: 2;
         width: 100%;
 
-        p{
+        .motto{
           font-size: 26px;
           width: 40%;
           margin: 15vh auto 0;
@@ -118,7 +118,7 @@ body{
           font-size: 12px;
           font-weight: 600;
           color: $font-color;
-          width: 40%;
+          width: 100%;
           margin: 12vh auto 0;
           text-align: center;
         }
@@ -188,20 +188,18 @@ body{
         }
 
         .triangle {
-          transform: rotate(45deg);
-          -webkit-transform: rotate(45deg);
+          @include prefix('transform', 'rotate(45deg)');
           background-color: $font-color;
           width:100px;
           height:96px;
           top: 20px;
-          position:relative;
-          -moz-border-radius: 20px;
+          position: relative;
           border-radius: 6px;
           margin: 0 auto;
         }
 
         .triangle p {
-          -webkit-transform: rotate(-45deg);
+          @include prefix('transform', 'rotate(-45deg)');
           width: 40px;
           padding: 15px 0 0 3px;
         }
