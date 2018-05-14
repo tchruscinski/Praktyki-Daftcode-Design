@@ -131,18 +131,18 @@ body main .socials-container {
 }
 body main .socials-container .socials {
   display: inline-block;
-  margin-left: 3vw;
+  margin-left: 2.5vw;
   vertical-align: middle;
 }
 body main .socials-container .socials object {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin: 0 0.4vw 0 0;
 }
 body main .socials-container .socials #google,
 body main .socials-container .socials #twitter {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 body main .socials-container .socials:nth-of-type(1) {
   margin-left: 0;
