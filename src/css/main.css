@@ -32,7 +32,20 @@ body nav #logo {
 body nav #logo img {
   height: 6vh;
 }
-body nav .option {
+body nav #hamburger_menu {
+  display: none;
+  order: 2;
+  min-width: 32px;
+  min-height: 22px;
+}
+body nav #hamburger_menu object {
+  pointer-events: none;
+}
+body nav #drawer {
+  order: 2;
+  display: flex;
+}
+body nav #drawer .option {
   display: block;
   text-transform: uppercase;
   margin: 5.5vh 0 0 2vw;
@@ -42,7 +55,7 @@ body nav .option {
   line-height: 10px;
   height: 10px;
 }
-body nav .option hr {
+body nav #drawer .option hr {
   display: none;
   height: 0;
   border: 0;
@@ -51,20 +64,24 @@ body nav .option hr {
   margin: 8px 0 0;
   padding: 0;
 }
-body nav .option:hover hr {
+body nav #drawer .option:hover hr {
   display: block;
 }
-body nav .visited {
+body nav #drawer .visited {
   border-bottom: 2px solid #fff;
 }
-body nav .contact {
+body nav #drawer .contact {
   border-radius: 3px;
   border: solid 2px #fff;
   padding: 7px 20px;
 }
-body nav .contact:hover {
+body nav #drawer .contact:hover {
   background-color: #fff;
   color: #001820;
+}
+body nav #drawer .open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 body main {
   order: 2;
@@ -285,6 +302,27 @@ body main .socials-container .socials #twitter {
 @media only screen and (max-width: 600px) {
   body #logo {
     margin-right: 15vw !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  body nav #hamburger_menu {
+    display: block;
+    margin: 6vh 10vh 0 0;
+  }
+  body nav #logo {
+    margin-right: 55vw !important;
+  }
+  body nav #drawer {
+    -webkit-transform: translate(0, -500px);
+    -moz-transform: translate(0, -500px);
+    -ms-transform: translate(0, -500px);
+    -o-transform: translate(0, -500px);
+    transform: translate(0, -500px);
+    -webkit-transition: transform 0.1s ease-in;
+    -moz-transition: transform 0.1s ease-in;
+    -ms-transition: transform 0.1s ease-in;
+    -o-transition: transform 0.1s ease-in;
+    transition: transform 0.1s ease-in;
   }
 }
 

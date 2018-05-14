@@ -33,6 +33,21 @@ body{
             }
           }
 
+          #hamburger_menu{
+            display: none;
+            order: 2;
+            min-width: 32px;
+            min-height: 22px;
+
+            object{
+              pointer-events: none;
+            }
+          }
+
+          #drawer{
+            order: 2;
+            display: flex;
+
           .option{
             display: block;
             text-transform: uppercase;
@@ -74,6 +89,12 @@ body{
             background-color: $font-color;
             color: $bg-color;
           }
+        }
+
+        #drawer .open {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
       }
 
       main{

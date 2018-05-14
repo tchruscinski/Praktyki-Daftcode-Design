@@ -144,5 +144,21 @@
 
 
 @media only screen and (max-width: 570px){
-  
+  //THE HAMBURGER MENU ANIMATION
+  body{
+    nav{
+      #hamburger_menu{
+        display: block;
+        margin: 6vh 10vh 0 0;
+      }
+
+      #logo{
+        margin-right: 55vw !important;
+      }
+      #drawer{
+        @include prefix('transform', 'translate(0, -500px)');
+        @include prefix('transition', 'transform 0.1s ease-in');
+      }
+    }
+  }
 }
