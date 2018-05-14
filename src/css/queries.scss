@@ -9,6 +9,7 @@
   }
 }
 
+
 @media only screen and (max-width: 1024px){
   body{
     background: url('../../assets/bg_image2.jpg') no-repeat center center fixed;
@@ -38,7 +39,6 @@
       .motto{
         margin-top: 12vh !important;
         font-size: 26px !important;
-        width: 50% !important;
       }
 
       .animation{
@@ -80,6 +80,7 @@
   }
 }
 
+
 @media only screen and (max-width: 920px){
   body{
     #logo{
@@ -93,6 +94,7 @@
   }
 }
 
+
 @media only screen and (max-width: 870px){
   body{
     #logo{
@@ -105,4 +107,42 @@
       }
     }
   }
+}
+
+
+@media only screen and (max-width: 800px){
+  body{
+    #logo{
+      margin-right: 25vw !important;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 680px){
+  body{
+    #logo{
+      margin-right: 20vw !important;
+    }
+
+    main{
+      .motto{
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  body{
+    #logo{
+      margin-right: 15vw !important;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 570px){
+  
 }
