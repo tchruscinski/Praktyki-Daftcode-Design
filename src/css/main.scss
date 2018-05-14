@@ -178,11 +178,11 @@ body{
         font-size: 10px;
 
         #wrapper {
-          position: absolute;
+          position: fixed;
           width: 140px;
           height: 60px;
           bottom: 0;
-          right: 50%; // Move it to the right for 50% of parent element
+          right: 50%;
           margin-right: -70px;
           overflow: hidden;
         }
