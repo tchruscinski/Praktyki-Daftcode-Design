@@ -14,6 +14,9 @@ body {
   background-size: 100% 100%;
   font-family: "Raleway", sans-serif;
 }
+body object {
+  pointer-events: none;
+}
 body a {
   text-decoration: none;
   color: inherit;
@@ -38,12 +41,27 @@ body nav #hamburger_menu {
   min-width: 32px;
   min-height: 22px;
 }
-body nav #hamburger_menu object {
-  pointer-events: none;
-}
 body nav #drawer {
   order: 2;
   display: flex;
+}
+body nav #drawer #image {
+  display: none;
+  width: 150px;
+  margin: 20px auto 10px;
+}
+body nav #drawer #image img {
+  height: 30px;
+  width: 150px;
+}
+body nav #drawer #close {
+  display: none;
+  z-index: 10;
+  width: 22px;
+  height: 22px;
+  position: fixed;
+  right: 0;
+  margin: 20px 30px 0 0;
 }
 body nav #drawer .option {
   display: block;
@@ -79,9 +97,25 @@ body nav #drawer .contact:hover {
   background-color: #fff;
   color: #001820;
 }
-body nav #drawer .open {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
+body nav .open {
+  -webkit-transform: translate(0, 0) !important;
+  -moz-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  -o-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+body nav #tags {
+  order: 3;
+  display: none;
+  margin-top: 5.5vh;
+}
+body nav #tags .socials {
+  display: inline-block;
+  margin-left: 35px;
+  vertical-align: middle;
+}
+body nav #tags .socials:nth-of-type(1) {
+  margin-left: 0;
 }
 body main {
   order: 2;
@@ -102,13 +136,15 @@ body main .animation {
   width: 90px;
   height: 90px;
 }
-body main .animation svg {
+body main .animation object {
   width: 80px;
   height: 80px;
 }
 body main .animation .clicked {
   -webkit-animation: spin 2s linear;
   -moz-animation: spin 2s linear;
+  -ms-animation: spin 2s linear;
+  -o-animation: spin 2s linear;
   animation: spin 2s linear;
 }
 @-moz-keyframes spin {
@@ -121,10 +157,19 @@ body main .animation .clicked {
     -webkit-transform: rotate(360deg);
   }
 }
+@-ms-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
   }
 }
 body main .bottom {
@@ -250,7 +295,7 @@ body footer .triangle p {
     width: 80px !important;
     height: 80px !important;
   }
-  body main .animation svg {
+  body main .animation object {
     width: 76px !important;
     height: 76px !important;
   }
@@ -307,22 +352,45 @@ body main .socials-container .socials #twitter {
 @media only screen and (max-width: 570px) {
   body nav #hamburger_menu {
     display: block;
-    margin: 6vh 10vh 0 0;
-  }
-  body nav #logo {
-    margin-right: 55vw !important;
+    margin: 6vh 10vh 0 35vh;
   }
   body nav #drawer {
-    -webkit-transform: translate(0, -500px);
-    -moz-transform: translate(0, -500px);
-    -ms-transform: translate(0, -500px);
-    -o-transform: translate(0, -500px);
-    transform: translate(0, -500px);
+    -webkit-transform: translate(300px,-530px);
+    -moz-transform: translate(300px,-530px);
+    -ms-transform: translate(300px,-530px);
+    -o-transform: translate(300px,-530px);
+    transform: translate(300px,-530px);
     -webkit-transition: transform 0.1s ease-in;
     -moz-transition: transform 0.1s ease-in;
     -ms-transition: transform 0.1s ease-in;
     -o-transition: transform 0.1s ease-in;
     transition: transform 0.1s ease-in;
+    z-index: 10;
+    background-color: #001820;
+    width: 320px;
+    height: 530px;
+    padding: 10px;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  body nav #drawer .contact {
+    padding: 7px 20px !important;
+  }
+  body nav #drawer #image {
+    display: block;
+  }
+  body nav #drawer #close {
+    display: block;
+  }
+  body nav #drawer #tags {
+    display: block;
+  }
+  body nav #drawer .option {
+    margin: 4vh auto;
+    width: 100px;
   }
 }
 

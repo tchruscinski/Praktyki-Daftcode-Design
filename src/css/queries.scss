@@ -46,7 +46,7 @@
           width: 80px !important;
           height: 80px !important;
 
-          svg{
+          object{
             width: 76px !important;
             height: 76px !important;
           }
@@ -149,15 +149,43 @@
     nav{
       #hamburger_menu{
         display: block;
-        margin: 6vh 10vh 0 0;
+        margin: 6vh 10vh 0 35vh;
       }
 
-      #logo{
-        margin-right: 55vw !important;
-      }
       #drawer{
-        @include prefix('transform', 'translate(0, -500px)');
+        @include prefix('transform', 'translate(300px,-530px)');
         @include prefix('transition', 'transform 0.1s ease-in');
+        z-index: 10;
+        background-color: $bg-color;
+        width: 320px;
+        height: 530px;
+        padding: 10px;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 14px;
+
+        .contact{
+          padding: 7px 20px !important;
+        }
+
+        #image{
+          display: block;
+        }
+
+        #close{
+          display: block;
+        }
+
+        #tags{
+          display: block;
+        }
+
+        .option{
+          margin: 4vh auto;
+          width: 100px;
+        }
       }
     }
   }

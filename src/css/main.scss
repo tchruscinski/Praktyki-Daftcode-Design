@@ -13,6 +13,10 @@ body{
   @include prefix('background-size', '100% 100%');
   font-family: 'Raleway', sans-serif;
 
+  object{
+    pointer-events: none;
+  }
+
       a{
         text-decoration: none;
         color: inherit;
@@ -38,25 +42,42 @@ body{
             order: 2;
             min-width: 32px;
             min-height: 22px;
-
-            object{
-              pointer-events: none;
-            }
           }
 
           #drawer{
             order: 2;
             display: flex;
 
-          .option{
-            display: block;
-            text-transform: uppercase;
-            margin: 5.5vh 0 0 2vw;
-            color: $font-color;
-            order: 2;
-            padding: 8px 5px 8px 0;
-            line-height: 10px;
-            height: 10px;
+            #image{
+              display: none;
+              width: 150px;
+              margin: 20px auto 10px;
+
+              img{
+                height: 30px;
+                width: 150px;
+              }
+            }
+
+            #close{
+              display: none;
+              z-index: 10;
+              width: 22px;
+              height: 22px;
+              position: fixed;
+              right: 0;
+              margin: 20px 30px 0 0;
+            }
+
+            .option{
+              display: block;
+              text-transform: uppercase;
+              margin: 5.5vh 0 0 2vw;
+              color: $font-color;
+              order: 2;
+              padding: 8px 5px 8px 0;
+              line-height: 10px;
+              height: 10px;
 
             hr {
               display: none;
@@ -90,10 +111,24 @@ body{
             color: $bg-color;
           }
         }
+        .open{
+          @include prefix('transform', 'translate(0, 0) !important');
+        }
 
-        #drawer .open {
-          -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+        #tags{
+          order: 3;
+          display: none;
+          margin-top: 5.5vh;
+
+          .socials{
+            display: inline-block;
+            margin-left: 35px;
+            vertical-align: middle;
+          }
+
+          .socials:nth-of-type(1){
+            margin-left: 0;
+          }
         }
       }
 
@@ -118,19 +153,19 @@ body{
             width: 90px;
             height: 90px;
 
-            svg{
+            object{
               width: 80px;
               height: 80px;
             }
 
             .clicked{
-              -webkit-animation: spin 2s linear;
-              -moz-animation: spin 2s linear;
-              animation: spin 2s linear;
+              @include prefix('animation', 'spin 2s linear');
             }
             @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
             @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            @-ms-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @-o-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg);} }
 
         }
 

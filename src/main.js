@@ -1,12 +1,14 @@
 let options = document.querySelectorAll('.option'),
-    object  = document.querySelector('svg'),
+  animation = document.querySelector('.animation'),
+     object = document.querySelector('#kolko_kwadrat'),
   hamburger = document.querySelector('#hamburger_menu'),
      drawer = document.querySelector('#drawer'),
+     close  = document.querySelector('#close'),
        main = document.querySelector('main');
 
 
 
-object.addEventListener('click', function(){
+animation.addEventListener('click', function(){
     object.classList.add("clicked");
     setTimeout(function(){
     object.classList.remove("clicked");
@@ -23,11 +25,14 @@ options.forEach(function(option){
 });
 
 hamburger.addEventListener('click', function(e) {
-      console.log('hello');
       drawer.classList.toggle('open');
       e.stopPropagation();
     });
 
 main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+
+close.addEventListener('click', function() {
       drawer.classList.remove('open');
     });
