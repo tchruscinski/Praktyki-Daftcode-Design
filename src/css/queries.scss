@@ -7,6 +7,11 @@
   #logo{
     margin-right: 45vw !important;
   }
+  main{
+    .motto{
+      width: 35% !important;
+    }
+  }
 }
 
 
@@ -39,6 +44,7 @@
       .motto{
         margin-top: 12vh !important;
         font-size: 26px !important;
+        width: 39% !important;
       }
 
       .animation{
@@ -118,6 +124,12 @@
     #logo{
       margin-right: 25vw !important;
     }
+    main{
+      .motto{
+        font-size: 20px !important;
+        width: 46% !important;
+      }
+    }
   }
 }
 
@@ -144,6 +156,12 @@
   body{
     #logo{
       margin-right: 15vw !important;
+    }
+    main{
+      .motto{
+        font-size: 20px !important;
+        width: 50% !important;
+      }
     }
   }
 }
@@ -249,6 +267,18 @@
 
       #hamburger_menu{
         margin: 6vh 10vh 0 10vw !important;
+      }
+    }
+
+    main{
+      .motto{
+        font-size: 22px;
+        color: $font-color;
+        margin-top: 8vh !important;
+        width: 50%;
+      }
+      .animation{
+          margin-top: 13vh !important;
       }
     }
   }

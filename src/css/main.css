@@ -123,7 +123,7 @@ body main {
 }
 body main .motto {
   font-size: 26px;
-  width: 60%;
+  width: 29.5%;
   margin: 15vh auto 0;
   text-align: center;
 }
@@ -261,6 +261,10 @@ body footer .triangle p {
   #logo {
     margin-right: 45vw !important;
   }
+
+  main .motto {
+    width: 35% !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   body {
@@ -289,6 +293,7 @@ body footer .triangle p {
   body main .motto {
     margin-top: 12vh !important;
     font-size: 26px !important;
+    width: 39% !important;
   }
   body main .animation {
     margin-top: 13vh !important;
@@ -338,6 +343,10 @@ body main .socials-container .socials #twitter {
   body #logo {
     margin-right: 25vw !important;
   }
+  body main .motto {
+    font-size: 20px !important;
+    width: 46% !important;
+  }
 }
 @media only screen and (max-width: 680px) {
   body #logo {
@@ -353,6 +362,10 @@ body main .socials-container .socials #twitter {
 @media only screen and (max-width: 600px) {
   body #logo {
     margin-right: 15vw !important;
+  }
+  body main .motto {
+    font-size: 20px !important;
+    width: 50% !important;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -444,6 +457,15 @@ body main .socials-container .socials #twitter {
   }
   body nav #hamburger_menu {
     margin: 6vh 10vh 0 10vw !important;
+  }
+  body main .motto {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 8vh !important;
+    width: 50%;
+  }
+  body main .animation {
+    margin-top: 13vh !important;
   }
 }
 
