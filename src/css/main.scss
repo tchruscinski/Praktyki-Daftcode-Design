@@ -175,7 +175,7 @@ body{
           font-weight: 600;
           color: $font-color;
           width: 100%;
-          margin: 12vh auto 0;
+          margin: 8vh auto 0;
           text-align: center;
         }
 
@@ -246,9 +246,9 @@ body{
         .triangle {
           @include prefix('transform', 'rotate(45deg)');
           background-color: $font-color;
-          width:100px;
-          height:96px;
-          top: 20px;
+          width:90px;
+          height:86px;
+          top: 25px;
           position: relative;
           border-radius: 5px;
           margin: 0 auto;
@@ -257,7 +257,7 @@ body{
         .triangle p {
           @include prefix('transform', 'rotate(-45deg)');
           width: 40px;
-          padding: 15px 0 0 3px;
+          padding: 8px 0 0 0;
         }
       }
 

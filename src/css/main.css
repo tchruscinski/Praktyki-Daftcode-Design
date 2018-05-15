@@ -178,7 +178,7 @@ body main .bottom {
   font-weight: 600;
   color: #fff;
   width: 100%;
-  margin: 12vh auto 0;
+  margin: 8vh auto 0;
   text-align: center;
 }
 body main .socials-container {
@@ -240,9 +240,9 @@ body footer .triangle {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #fff;
-  width: 100px;
-  height: 96px;
-  top: 20px;
+  width: 90px;
+  height: 86px;
+  top: 25px;
   position: relative;
   border-radius: 5px;
   margin: 0 auto;
@@ -254,7 +254,7 @@ body footer .triangle p {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   width: 40px;
-  padding: 15px 0 0 3px;
+  padding: 8px 0 0 0;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -391,7 +391,7 @@ body main .socials-container .socials #twitter {
     transition: transform 0.1s ease-in;
     z-index: 10;
     background-color: #001820;
-    width: 320px;
+    width: 100%;
     height: 530px;
     padding: 10px;
     flex-direction: column;
@@ -405,6 +405,7 @@ body main .socials-container .socials #twitter {
   }
   body nav #drawer #image {
     display: block;
+    margin-bottom: 2vh;
   }
   body nav #drawer #close {
     display: block;
@@ -439,7 +440,7 @@ body main .socials-container .socials #twitter {
     visibility: visible;
     display: block;
     position: absolute;
-    margin: -30px 0 0 4px;
+    margin: -25px 0 0 4px;
     width: 18px;
     font-size: 16px;
   }
@@ -453,27 +454,115 @@ body main .socials-container .socials #twitter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  body nav {
-    text-align: center;
-  }
   body nav #logo {
     width: 170px;
-    margin: 5vh auto 0 calc(50% - 85px);
+    margin: 5vh auto 0 calc(50% - 55px);
+  }
+  body nav #logo img {
+    height: 5.1vh;
   }
   body nav #hamburger_menu {
-    margin: 6vh 10vh 0 10vw !important;
+    margin: 6vh 10vh 0 6vh !important;
   }
   body main .motto {
     font-size: 20px !important;
     color: #fff;
     margin-top: 8vh !important;
-    width: 70% !important;
+    width: 68% !important;
   }
   body main .animation {
-    margin-top: 13vh !important;
+    margin-top: 15vh !important;
   }
-  body main .socials {
+  body main .animation object {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  body main .socials-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .socials-container .socials {
     display: block !important;
+    width: 45%;
+    text-align: right;
+    margin: 0;
+    padding: 0 2vw 0 0;
+    box-sizing: border-box;
+  }
+  body main .socials-container .socials:nth-of-type(1) {
+    order: 1;
+    margin-bottom: 2vh;
+  }
+  body main .socials-container .socials:nth-of-type(2) {
+    order: 3;
+    margin-bottom: 2vh;
+  }
+  body main .socials-container .socials:nth-of-type(3) {
+    order: 5;
+  }
+  body main .socials-container span {
+    display: inline-block;
+    text-align: left;
+    height: 100%;
+    width: 55%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body main .socials-container span::before {
+    margin-right: 2vw;
+  }
+  body main .socials-container span:nth-of-type(1) {
+    order: 2;
+    margin-bottom: 2vh;
+  }
+  body main .socials-container span:nth-of-type(2) {
+    order: 4;
+    margin-bottom: 2vh;
+  }
+  body main .socials-container span:nth-of-type(3) {
+    order: 6;
+  }
+  body main .bottom {
+    width: 65% !important;
+    margin: 6vh auto 0 !important;
+    font-size: 10px;
+  }
+  body footer .triangle {
+    width: 55px;
+    height: 54px;
+    top: 45px;
+  }
+  body footer p:after {
+    margin-top: -28px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body nav #hamburger_menu {
+    margin: 6vh 10vh 0 2vh !important;
+  }
+  body main .motto {
+    width: 67% !important;
+  }
+  body main .animation {
+    margin-top: 8vh !important;
+  }
+  body main .animation object {
+    width: 66px !important;
+    height: 66px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body nav #hamburger_menu {
+    margin: 6vh 10vh 0 3vh !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body main .animation {
+    margin-top: 6vh !important;
+  }
+  body main .bottom {
+    margin: 3vh auto 0 !important;
   }
 }
 

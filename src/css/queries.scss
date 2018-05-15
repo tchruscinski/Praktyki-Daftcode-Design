@@ -188,7 +188,7 @@
         @include prefix('transition', 'transform 0.1s ease-in');
         z-index: 10;
         background-color: $bg-color;
-        width: 320px;
+        width: 100%;
         height: 530px;
         padding: 10px;
         flex-direction: column;
@@ -203,6 +203,7 @@
 
         #image{
           display: block;
+          margin-bottom: 2vh;
         }
 
         #close{
@@ -247,8 +248,7 @@
         visibility: visible;
         display: block;
         position: absolute;
-        //padding: -10px 0 0 3px;
-        margin: -30px 0 0 4px;
+        margin: -25px 0 0 4px;
         width: 18px;
         font-size: 16px;
       }
@@ -264,16 +264,17 @@
 
     nav{
 
-      text-align: center;
-
       #logo{
         width: 170px;
-        margin: 5vh auto 0 calc(50% - 85px);
+        margin: 5vh auto 0 calc(50% - 55px);
 
+        img{
+          height: 5.1vh;
+        }
       }
 
       #hamburger_menu{
-        margin: 6vh 10vh 0 10vw !important;
+        margin: 6vh 10vh 0 6vh !important;
       }
     }
 
@@ -282,13 +283,138 @@
         font-size: 20px !important;
         color: $font-color;
         margin-top: 8vh !important;
-        width: 70% !important;
+        width: 68% !important;
       }
       .animation{
-          margin-top: 13vh !important;
+          margin-top: 15vh !important;
+
+          object{
+                width: 72px !important;
+                height: 72px !important;
+          }
       }
-      .socials{
-        display: block !important;
+
+      .socials-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .socials{
+          display: block !important;
+          width: 45%;
+          text-align: right;
+          margin: 0;
+          padding: 0 2vw 0 0;
+          box-sizing: border-box;
+        }
+
+        .socials:nth-of-type(1){
+          order: 1;
+          margin-bottom: 2vh;
+        }
+
+        .socials:nth-of-type(2){
+          order: 3;
+          margin-bottom: 2vh;
+        }
+
+        .socials:nth-of-type(3){
+          order: 5;
+        }
+        span{
+          display: inline-block;
+          text-align: left;
+          height: 100%;
+          width: 55%;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        span::before {
+            margin-right: 2vw;
+        }
+
+        span:nth-of-type(1){
+          order: 2;
+          margin-bottom: 2vh;
+        }
+
+        span:nth-of-type(2){
+          order: 4;
+          margin-bottom: 2vh;
+        }
+
+        span:nth-of-type(3){
+          order: 6;
+        }
+
+      }
+      .bottom{
+        width: 65% !important;
+        margin: 6vh auto 0 !important;
+        font-size: 10px;
+      }
+    }
+    footer{
+
+      .triangle{
+        width:55px;
+        height:54px;
+        top: 45px;
+      }
+      p:after {
+        margin-top: -28px;
+        font-size: 14px;
+      }
+
+    }
+  }
+}
+
+
+@media only screen and (max-width: 410px){
+  body{
+    nav{
+      #hamburger_menu{
+        margin: 6vh 10vh 0 2vh !important;
+      }
+    }
+    main{
+      .motto{
+        width: 67% !important;
+      }
+
+      .animation{
+          margin-top: 8vh !important;
+
+          object{
+                width: 66px !important;
+                height: 66px !important;
+          }
+      }
+
+    }
+  }
+}
+
+
+@media only screen and (max-width: 350px){
+  body{
+    nav{
+      #hamburger_menu{
+        margin: 6vh 10vh 0 3vh !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px){
+  body{
+    main{
+      .animation{
+        margin-top: 6vh !important;
+      }
+      .bottom{
+        margin: 3vh auto 0 !important;
       }
     }
   }
