@@ -44,7 +44,7 @@
       .motto{
         margin-top: 12vh !important;
         font-size: 26px !important;
-        width: 39% !important;
+        width: 39.2% !important;
       }
 
       .animation{
@@ -95,6 +95,13 @@
     nav{
       .contact{
           padding: 6px 16px !important;
+      }
+    }
+    main{
+      .motto{
+        margin-top: 12vh !important;
+        font-size: 26px !important;
+        width: 42% !important;
       }
     }
   }
@@ -272,13 +279,16 @@
 
     main{
       .motto{
-        font-size: 22px;
+        font-size: 20px !important;
         color: $font-color;
         margin-top: 8vh !important;
-        width: 50%;
+        width: 70% !important;
       }
       .animation{
           margin-top: 13vh !important;
+      }
+      .socials{
+        display: block !important;
       }
     }
   }

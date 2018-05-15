@@ -293,7 +293,7 @@ body footer .triangle p {
   body main .motto {
     margin-top: 12vh !important;
     font-size: 26px !important;
-    width: 39% !important;
+    width: 39.2% !important;
   }
   body main .animation {
     margin-top: 13vh !important;
@@ -326,6 +326,11 @@ body main .socials-container .socials #twitter {
   }
   body nav .contact {
     padding: 6px 16px !important;
+  }
+  body main .motto {
+    margin-top: 12vh !important;
+    font-size: 26px !important;
+    width: 42% !important;
   }
 }
 @media only screen and (max-width: 870px) {
@@ -459,13 +464,16 @@ body main .socials-container .socials #twitter {
     margin: 6vh 10vh 0 10vw !important;
   }
   body main .motto {
-    font-size: 22px;
+    font-size: 20px !important;
     color: #fff;
     margin-top: 8vh !important;
-    width: 50%;
+    width: 70% !important;
   }
   body main .animation {
     margin-top: 13vh !important;
+  }
+  body main .socials {
+    display: block !important;
   }
 }
 
