@@ -105,6 +105,9 @@
       .motto{
         font-size: 22px !important;
       }
+      .animation{
+          margin-top: 15vh !important;
+      }
     }
   }
 }
@@ -129,6 +132,9 @@
       .motto{
         font-size: 20px !important;
       }
+      .animation{
+          margin-top: 16vh !important;
+      }
     }
   }
 }
@@ -149,7 +155,7 @@
     nav{
       #hamburger_menu{
         display: block;
-        margin: 6vh 10vh 0 35vh;
+        margin: 6vh 10vh 0 42vw;
       }
 
       #drawer{
@@ -186,6 +192,63 @@
           margin: 4vh auto;
           width: 100px;
         }
+      }
+    }
+    main{
+      .motto{
+        font-size: 18px !important;
+      }
+      .animation{
+          margin-top: 17vh !important;
+      }
+    }
+    footer{
+
+      .triangle{
+        width:60px;
+        height:59px;
+        top: 35px;
+      }
+
+      p {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+      }
+      p:after {
+        content:'+';
+        visibility: visible;
+        display: block;
+        position: absolute;
+        //padding: -10px 0 0 3px;
+        margin: -30px 0 0 4px;
+        width: 18px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 525px){
+  body{
+    background: url('../../assets/bg_image_mobile.jpg') no-repeat center center fixed;
+    @include prefix('background-size', '100% 100%');
+
+    nav{
+
+      text-align: center;
+
+      #logo{
+        width: 170px;
+        margin: 5vh auto 0 calc(50% - 85px);
+
+      }
+
+      #hamburger_menu{
+        margin: 6vh 10vh 0 10vw !important;
       }
     }
   }
